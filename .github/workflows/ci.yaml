@@ -22,7 +22,7 @@ jobs:
             mysql
             tubesync
         env:
-          - DATABASE_CONNECTION=mysql://root:root@mysql:3306/tubesync
+          DATABASE_CONNECTION: "mysql://root:root@mysql:3306/tubesync"
           
   test-postgres:
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
             postgres
             tubesync
         env:
-          - DATABASE_CONNECTION=postgresql://root:root@mysql:5432/tubesync    
+          DATABASE_CONNECTION: "postgresql://root:root@mysql:5432/tubesync"
 
   test-sqlite:
     runs-on: ubuntu-latest
